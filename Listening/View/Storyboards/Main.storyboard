@@ -1,29 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J7y-Mz-bEo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9AQ-iN-hO4">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="SBG-Wz-hoa">
+            <objects>
+                <navigationController id="9AQ-iN-hO4" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KzJ-GS-u7l">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="J7y-Mz-bEo" kind="relationship" relationship="rootViewController" id="yzQ-d1-8bY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tdl-NY-Nmg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1242" y="118"/>
+        </scene>
+        <!--Sign In View Controller-->
         <scene sceneID="8sk-gm-MOz">
             <objects>
-                <viewController id="J7y-Mz-bEo" sceneMemberID="viewController">
+                <viewController id="J7y-Mz-bEo" customClass="SignInViewController" customModule="Listening" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uyD-YV-AV0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TIx-Pm-Rzf">
+                                <rect key="frame" x="0.0" y="233.5" width="375" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Npj-QQ-qgn">
+                                        <rect key="frame" x="118.5" y="85" width="139" height="30"/>
+                                        <state key="normal" title="Sign in Google Drive">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signInGoogle:" destination="J7y-Mz-bEo" eventType="touchUpInside" id="jYW-I1-LZ3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Npj-QQ-qgn" firstAttribute="centerY" secondItem="TIx-Pm-Rzf" secondAttribute="centerY" id="M4O-4d-Ufg"/>
+                                    <constraint firstAttribute="width" secondItem="TIx-Pm-Rzf" secondAttribute="height" multiplier="15:8" id="PAJ-Oq-Nj1"/>
+                                    <constraint firstItem="Npj-QQ-qgn" firstAttribute="centerX" secondItem="TIx-Pm-Rzf" secondAttribute="centerX" id="YMW-rv-SQH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SUG-B7-sL5" firstAttribute="trailing" secondItem="TIx-Pm-Rzf" secondAttribute="trailing" id="0vA-A4-ML3"/>
+                            <constraint firstItem="TIx-Pm-Rzf" firstAttribute="leading" secondItem="SUG-B7-sL5" secondAttribute="leading" id="HO3-um-Tcv"/>
+                            <constraint firstItem="TIx-Pm-Rzf" firstAttribute="centerY" secondItem="uyD-YV-AV0" secondAttribute="centerY" id="gR3-G6-aeq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="SUG-B7-sL5"/>
                     </view>
+                    <navigationItem key="navigationItem" id="rSv-dv-nKg"/>
+                    <connections>
+                        <outlet property="signInGoogleDriveButton" destination="Npj-QQ-qgn" id="irC-0t-dgT"/>
+                        <segue destination="D4t-r2-V5w" kind="show" identifier="fromSignInVCToChooseFolderVC" id="w1m-xa-g32"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y1B-TR-4CS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="192"/>
+            <point key="canvasLocation" x="-516" y="119"/>
+        </scene>
+        <!--Choose your folders-->
+        <scene sceneID="VFl-rP-cR8">
+            <objects>
+                <viewController id="D4t-r2-V5w" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hS7-14-KdJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="RZ9-Bh-dEQ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HJa-cY-J8N">
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RZ9-Bh-dEQ" firstAttribute="trailing" secondItem="Jcu-qc-2uU" secondAttribute="trailing" id="Xei-Is-qQB"/>
+                            <constraint firstItem="Jcu-qc-2uU" firstAttribute="trailing" secondItem="HJa-cY-J8N" secondAttribute="trailing" id="YJs-4h-CkG"/>
+                            <constraint firstItem="RZ9-Bh-dEQ" firstAttribute="leading" secondItem="Jcu-qc-2uU" secondAttribute="leading" id="YsF-Jf-mvO"/>
+                            <constraint firstItem="Jcu-qc-2uU" firstAttribute="bottom" secondItem="HJa-cY-J8N" secondAttribute="bottom" id="cf6-Zx-fA5"/>
+                            <constraint firstItem="RZ9-Bh-dEQ" firstAttribute="top" secondItem="Jcu-qc-2uU" secondAttribute="top" id="fQk-93-8Ya"/>
+                            <constraint firstItem="HJa-cY-J8N" firstAttribute="leading" secondItem="Jcu-qc-2uU" secondAttribute="leading" id="fm0-4z-zKK"/>
+                            <constraint firstItem="HJa-cY-J8N" firstAttribute="top" secondItem="RZ9-Bh-dEQ" secondAttribute="bottom" id="j7C-qV-P1D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jcu-qc-2uU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choose your folders" id="LAV-1B-F5w">
+                        <barButtonItem key="leftBarButtonItem" title="Sign out" id="gYB-cy-rau"/>
+                        <barButtonItem key="rightBarButtonItem" title="Next" systemItem="save" id="dJd-dv-Ill"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MdW-gd-A2o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="222" y="113"/>
         </scene>
     </scenes>
 </document>

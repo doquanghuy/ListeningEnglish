@@ -9,9 +9,14 @@
 import UIKit
 import GoogleSignIn
 
-class SignInViewController: UIViewController {
+class SignInViewController: BaseViewController {
     @IBOutlet weak var signInGoogleDriveButton: UIButton!
     private var viewModel: SignInViewModelInterface?
+    
+    class var instance: SignInViewController {
+        return UIStoryboard(name: Constants.Storyboards.main.name, bundle: nil).instantiateViewController(withIdentifier: Constants.Storyboards.main.viewControllers[self.name]!) as! SignInViewController
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +25,10 @@ class SignInViewController: UIViewController {
     }
     
     func setupUI() {
+        signInGoogleDriveButton.layer.borderColor = UIColor.black.cgColor
+        signInGoogleDriveButton.layer.borderWidth = 1.0
+        signInGoogleDriveButton.layer.cornerRadius = 5.0
+        
         GIDSignIn.sharedInstance().uiDelegate = self
         GoogleSignIn.shared.start()
     }

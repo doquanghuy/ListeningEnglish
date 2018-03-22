@@ -5,8 +5,10 @@ target 'Listening' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
   	pod 'GoogleSignIn'
-    pod 'GoogleAPIClientForREST'
+    pod 'GoogleAPIClientForREST/Drive'
     pod 'SwiftEventBus'
+    pod 'UIScrollView-InfiniteScroll'
+    pod 'SwiftyJSON'
   # Pods for Listening
 
 end

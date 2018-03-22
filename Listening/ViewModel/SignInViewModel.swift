@@ -34,6 +34,7 @@ class GoogleSignIn: NSObject {
     func start() {
         GIDSignIn.sharedInstance().clientID = "596723062186-bkd21gpv1lhh6ooj8osofhnfcjksq6qr.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().delegate = self
+        GIDSignIn.sharedInstance().scopes = ["https://www.googleapis.com/auth/drive"]
     }
     
     func shouldOpenURL(url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {

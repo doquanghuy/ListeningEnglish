@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LyricSettingFullControlView">
+            <connections>
+                <outlet property="backButton" destination="KFz-8z-hCi" id="MRG-45-7Zh"/>
+                <outlet property="leftLabel" destination="RaP-ht-UML" id="q3i-Nk-2aH"/>
+                <outlet property="loopButton" destination="wnx-5Q-ayO" id="GNu-Dl-GOf"/>
+                <outlet property="nextButton" destination="FSr-ov-W91" id="Ive-Mq-eGR"/>
+                <outlet property="playButton" destination="41i-Da-k4J" id="gas-VU-0eD"/>
+                <outlet property="rightLabel" destination="zUH-SB-zbs" id="Zz5-uo-7eD"/>
+                <outlet property="sliderView" destination="k8r-kl-D2D" id="Wbb-ic-e0Z"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="131"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFz-8z-hCi">
+                    <rect key="frame" x="10" y="55.5" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="Cw0-km-XOm"/>
+                        <constraint firstAttribute="height" constant="20" id="zou-sE-oVD"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="btn_back"/>
+                    <connections>
+                        <action selector="clickBackButton:" destination="-1" eventType="touchUpInside" id="G0B-7W-RDZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41i-Da-k4J">
+                    <rect key="frame" x="40" y="55.5" width="20" height="20"/>
+                    <state key="normal" title="Button" image="play"/>
+                    <connections>
+                        <action selector="clickPlayButton:" destination="-1" eventType="touchUpInside" id="M28-K3-HcX"/>
+                    </connections>
+                </button>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="k8r-kl-D2D">
+                    <rect key="frame" x="128" y="50.5" width="96" height="31"/>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaP-ht-UML">
+                    <rect key="frame" x="70" y="58.5" width="50" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="B5Z-dH-pev"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUH-SB-zbs">
+                    <rect key="frame" x="232" y="58.5" width="50" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="eZF-0M-oXo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSr-ov-W91">
+                    <rect key="frame" x="292" y="55.5" width="20" height="20"/>
+                    <state key="normal" image="btn_next"/>
+                    <connections>
+                        <action selector="next:" destination="-1" eventType="touchUpInside" id="YSf-EA-HFY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnx-5Q-ayO">
+                    <rect key="frame" x="322" y="55.5" width="20" height="20"/>
+                    <state key="normal" image="ic_no_repeat"/>
+                    <connections>
+                        <action selector="loop:" destination="-1" eventType="touchUpInside" id="LsM-cH-Yl9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="41i-Da-k4J" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="0y5-RH-EbJ"/>
+                <constraint firstItem="zUH-SB-zbs" firstAttribute="leading" secondItem="k8r-kl-D2D" secondAttribute="trailing" constant="10" id="3hL-Ma-SDf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wnx-5Q-ayO" secondAttribute="trailing" constant="10" id="CB3-qd-6Lr"/>
+                <constraint firstItem="KFz-8z-hCi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="CRc-g2-p0Y"/>
+                <constraint firstItem="FSr-ov-W91" firstAttribute="width" secondItem="KFz-8z-hCi" secondAttribute="width" id="CRh-bW-cGw"/>
+                <constraint firstItem="FSr-ov-W91" firstAttribute="leading" secondItem="zUH-SB-zbs" secondAttribute="trailing" constant="10" id="JEI-jJ-soc"/>
+                <constraint firstItem="KFz-8z-hCi" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LTv-wj-hYK"/>
+                <constraint firstItem="RaP-ht-UML" firstAttribute="leading" secondItem="41i-Da-k4J" secondAttribute="trailing" constant="10" id="MQt-7g-JOX"/>
+                <constraint firstItem="k8r-kl-D2D" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="U59-MM-HHy"/>
+                <constraint firstItem="41i-Da-k4J" firstAttribute="leading" secondItem="KFz-8z-hCi" secondAttribute="trailing" constant="10" id="UdP-Ab-JMr"/>
+                <constraint firstItem="RaP-ht-UML" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="f2c-Sj-vNA"/>
+                <constraint firstItem="41i-Da-k4J" firstAttribute="width" secondItem="KFz-8z-hCi" secondAttribute="width" id="feT-RO-PCN"/>
+                <constraint firstItem="k8r-kl-D2D" firstAttribute="leading" secondItem="RaP-ht-UML" secondAttribute="trailing" constant="10" id="i9T-JM-3D8"/>
+                <constraint firstItem="FSr-ov-W91" firstAttribute="height" secondItem="KFz-8z-hCi" secondAttribute="height" id="j4R-yr-Ql0"/>
+                <constraint firstItem="41i-Da-k4J" firstAttribute="height" secondItem="KFz-8z-hCi" secondAttribute="height" id="jXg-CF-DUg"/>
+                <constraint firstItem="wnx-5Q-ayO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="nP2-OU-JIH"/>
+                <constraint firstItem="zUH-SB-zbs" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="nZE-YF-Emg"/>
+                <constraint firstItem="wnx-5Q-ayO" firstAttribute="leading" secondItem="FSr-ov-W91" secondAttribute="trailing" constant="10" id="ncl-hf-6s9"/>
+                <constraint firstItem="wnx-5Q-ayO" firstAttribute="height" secondItem="KFz-8z-hCi" secondAttribute="height" id="qBi-O6-QUF"/>
+                <constraint firstItem="wnx-5Q-ayO" firstAttribute="width" secondItem="KFz-8z-hCi" secondAttribute="width" id="rGQ-df-yBL"/>
+                <constraint firstItem="FSr-ov-W91" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="uXF-WJ-s74"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="13" y="-215.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_back" width="30" height="30"/>
+        <image name="btn_next" width="30" height="30"/>
+        <image name="ic_no_repeat" width="30" height="30"/>
+        <image name="play" width="30" height="30"/>
+    </resources>
+</document>

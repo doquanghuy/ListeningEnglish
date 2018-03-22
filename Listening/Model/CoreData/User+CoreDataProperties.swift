@@ -20,8 +20,7 @@ extension User {
     @NSManaged public var name: String?
     @NSManaged public var email: String?
     @NSManaged public var googleId: String?
-    @NSManaged public var folders: NSSet?
-    @NSManaged public var items: NSSet?
+    @NSManaged public var folders: Set<Folder>?
 
 }
 
@@ -35,26 +34,9 @@ extension User {
     @NSManaged public func removeFromFolders(_ value: Folder)
 
     @objc(addFolders:)
-    @NSManaged public func addToFolders(_ values: NSSet)
+    @NSManaged public func addToFolders(_ values: Set<Folder>)
 
     @objc(removeFolders:)
-    @NSManaged public func removeFromFolders(_ values: NSSet)
-
-}
-
-// MARK: Generated accessors for items
-extension User {
-
-    @objc(addItemsObject:)
-    @NSManaged public func addToItems(_ value: Item)
-
-    @objc(removeItemsObject:)
-    @NSManaged public func removeFromItems(_ value: Item)
-
-    @objc(addItems:)
-    @NSManaged public func addToItems(_ values: NSSet)
-
-    @objc(removeItems:)
-    @NSManaged public func removeFromItems(_ values: NSSet)
+    @NSManaged public func removeFromFolders(_ values: Set<Folder>)
 
 }

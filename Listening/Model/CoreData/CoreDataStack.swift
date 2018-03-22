@@ -86,5 +86,10 @@ class CoreDataStack {
             return false
         }
     }
+    
+    @discardableResult func save() -> Bool {
+        guard self.saveChildContext() else {return false}
+        return self.saveContext()
+    }
 }
 

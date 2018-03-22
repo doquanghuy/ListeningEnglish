@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		328A7E8B91F4415A8C65B651 /* Pods_Listening.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF31041C1B36844AB4EC6FC /* Pods_Listening.framework */; };
+		6C0301CD204BEB450077321D /* CustomTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0301CC204BEB450077321D /* CustomTicket.swift */; };
+		6C0301CF204C01C90077321D /* ListItemDownloadedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0301CE204C01C90077321D /* ListItemDownloadedTableViewCell.swift */; };
+		6C0301D1204C02500077321D /* ListItemDownloadedTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0301D0204C02500077321D /* ListItemDownloadedTableViewCellModel.swift */; };
+		6C0301D3204C42A70077321D /* LyricSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0301D2204C42A70077321D /* LyricSettingViewController.swift */; };
+		6C0301D5204C42B60077321D /* LyricSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0301D4204C42B60077321D /* LyricSettingViewModel.swift */; };
+		6C0301D7204C43C10077321D /* TextFileParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0301D6204C43C10077321D /* TextFileParser.swift */; };
+		6C0301D9204CEA3D0077321D /* LyricSettingControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C0301D8204CEA3D0077321D /* LyricSettingControlView.xib */; };
+		6C0301DD204CEAAF0077321D /* LyricSettingControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0301DC204CEAAF0077321D /* LyricSettingControlView.swift */; };
+		6C0301DF204CF3BE0077321D /* CustomAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0301DE204CF3BE0077321D /* CustomAudioPlayer.swift */; };
+		6C0301E1204D56F40077321D /* Ext+TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0301E0204D56F40077321D /* Ext+TimeInterval.swift */; };
+		6C0301E5204EA8900077321D /* LyricTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0301E4204EA8900077321D /* LyricTableViewCellModel.swift */; };
+		6C192C77204FB9990041AEF6 /* Paragraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C192C76204FB9990041AEF6 /* Paragraph.swift */; };
 		6C22D9F8204707700081FBE4 /* Persistent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C22D9F7204707700081FBE4 /* Persistent.swift */; };
 		6C22D9FA20470E570081FBE4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C22D9F920470E570081FBE4 /* Constants.swift */; };
 		6C22D9FF204714090081FBE4 /* Listening.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6C22D9FD204714090081FBE4 /* Listening.xcdatamodeld */; };
@@ -19,6 +31,12 @@
 		6C22DA17204718510081FBE4 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C22DA15204718510081FBE4 /* Item+CoreDataProperties.swift */; };
 		6C22DA19204719190081FBE4 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C22DA18204719190081FBE4 /* CoreDataStack.swift */; };
 		6C22DA1C20471A0F0081FBE4 /* Ext+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C22DA1B20471A0F0081FBE4 /* Ext+UIView.swift */; };
+		6C22DA1E2047A8480081FBE4 /* ListFolderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C22DA1D2047A8480081FBE4 /* ListFolderTableViewCell.swift */; };
+		6C22DA202047A8D70081FBE4 /* SelectFolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C22DA1F2047A8D70081FBE4 /* SelectFolderViewController.swift */; };
+		6C22DA222047AA0A0081FBE4 /* SelectFolderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C22DA212047AA0A0081FBE4 /* SelectFolderViewModel.swift */; };
+		6C22DA242047BCE70081FBE4 /* BaseServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C22DA232047BCE70081FBE4 /* BaseServices.swift */; };
+		6C22DA292047D7F00081FBE4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C22DA282047D7F00081FBE4 /* GoogleService-Info.plist */; };
+		6C22DA2B2047EC610081FBE4 /* Enumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C22DA2A2047EC610081FBE4 /* Enumeration.swift */; };
 		6CCED4992045CD9B00AADFDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCED48F2045CD9B00AADFDD /* AppDelegate.swift */; };
 		6CCED49A2045CD9B00AADFDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CCED4942045CD9B00AADFDD /* Assets.xcassets */; };
 		6CCED49B2045CD9B00AADFDD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CCED4962045CD9B00AADFDD /* Info.plist */; };
@@ -26,10 +44,49 @@
 		6CCED4A32045D4F800AADFDD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCED4A22045D4F700AADFDD /* SignInViewController.swift */; };
 		6CCED4A52045D51400AADFDD /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCED4A42045D51400AADFDD /* SignInViewModel.swift */; };
 		6CCED4A82045D91A00AADFDD /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCED4A72045D91A00AADFDD /* Dynamic.swift */; };
+		6CEDC5412053FF1E00D8958A /* LyricSettingFullControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CEDC5402053FF1E00D8958A /* LyricSettingFullControlView.xib */; };
+		6CEDC54320540B1000D8958A /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEDC54220540B1000D8958A /* PlayViewController.swift */; };
+		6CEDC54520540BFB00D8958A /* LyricSettingFullControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEDC54420540BFB00D8958A /* LyricSettingFullControlView.swift */; };
+		6CEDC54720540C8B00D8958A /* PlayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEDC54620540C8B00D8958A /* PlayViewModel.swift */; };
+		6CEDC5492054291500D8958A /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEDC5482054291500D8958A /* JsonParser.swift */; };
+		6CEDC54C2055294000D8958A /* LyricTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEDC54A2055294000D8958A /* LyricTableViewCell.swift */; };
+		6CEDC54D2055294000D8958A /* LyricTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CEDC54B2055294000D8958A /* LyricTableViewCell.xib */; };
+		6CEDC54F20552F5D00D8958A /* LoopNotifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEDC54E20552F5D00D8958A /* LoopNotifyView.swift */; };
+		6CEDC55120552F6800D8958A /* LoopNotifyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CEDC55020552F6800D8958A /* LoopNotifyView.xib */; };
+		6CEDC5542055482C00D8958A /* PlayControlInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEDC5532055482C00D8958A /* PlayControlInterface.swift */; };
+		6CEDC5562055485000D8958A /* PlayViewModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEDC5552055485000D8958A /* PlayViewModelInterface.swift */; };
+		6CEDC5582055489B00D8958A /* SelectFolderViewModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEDC5572055489B00D8958A /* SelectFolderViewModelInterface.swift */; };
+		6CEDC55A205548C000D8958A /* LyricSettingViewModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEDC559205548C000D8958A /* LyricSettingViewModelInterface.swift */; };
+		6CEDC55C2055593500D8958A /* ListFileViewModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEDC55B2055593500D8958A /* ListFileViewModelInterface.swift */; };
+		6CFAAF7120482DA400A22A7A /* Ext+NSManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFAAF7020482DA400A22A7A /* Ext+NSManagedObject.swift */; };
+		6CFAAF732048355900A22A7A /* ListItemTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFAAF722048355900A22A7A /* ListItemTableViewCellModel.swift */; };
+		6CFAAF75204912BD00A22A7A /* Ext+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFAAF74204912BD00A22A7A /* Ext+Date.swift */; };
+		6CFAAF77204956F400A22A7A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFAAF76204956F400A22A7A /* BaseViewController.swift */; };
+		6CFAAF7920495D3D00A22A7A /* ListFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFAAF7820495D3D00A22A7A /* ListFileViewController.swift */; };
+		6CFAAF7B20495E9E00A22A7A /* ListFileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFAAF7A20495E9E00A22A7A /* ListFileViewModel.swift */; };
+		6CFAAF7D20498A1E00A22A7A /* ListFileCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFAAF7C20498A1E00A22A7A /* ListFileCellModel.swift */; };
+		6CFAAF7F2049C98400A22A7A /* ListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFAAF7E2049C98400A22A7A /* ListItemTableViewCell.swift */; };
+		6CFAAF81204A53E100A22A7A /* LoadingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFAAF80204A53E100A22A7A /* LoadingFooterView.swift */; };
+		6CFAAF83204A546300A22A7A /* LoadingFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CFAAF82204A546300A22A7A /* LoadingFooterView.xib */; };
+		6CFAAF85204A681600A22A7A /* LoadingFooterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFAAF84204A681600A22A7A /* LoadingFooterViewModel.swift */; };
+		6CFAAF89204ABFDC00A22A7A /* CustomFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFAAF88204ABFDC00A22A7A /* CustomFileManager.swift */; };
+		6CFAAF8B204B003600A22A7A /* Ext+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFAAF8A204B003600A22A7A /* Ext+String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		58A04761472305FCC3B6E107 /* Pods-Listening.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Listening.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Listening/Pods-Listening.debug.xcconfig"; sourceTree = "<group>"; };
+		6C0301CC204BEB450077321D /* CustomTicket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTicket.swift; sourceTree = "<group>"; };
+		6C0301CE204C01C90077321D /* ListItemDownloadedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemDownloadedTableViewCell.swift; sourceTree = "<group>"; };
+		6C0301D0204C02500077321D /* ListItemDownloadedTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemDownloadedTableViewCellModel.swift; sourceTree = "<group>"; };
+		6C0301D2204C42A70077321D /* LyricSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricSettingViewController.swift; sourceTree = "<group>"; };
+		6C0301D4204C42B60077321D /* LyricSettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricSettingViewModel.swift; sourceTree = "<group>"; };
+		6C0301D6204C43C10077321D /* TextFileParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFileParser.swift; sourceTree = "<group>"; };
+		6C0301D8204CEA3D0077321D /* LyricSettingControlView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LyricSettingControlView.xib; sourceTree = "<group>"; };
+		6C0301DC204CEAAF0077321D /* LyricSettingControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricSettingControlView.swift; sourceTree = "<group>"; };
+		6C0301DE204CF3BE0077321D /* CustomAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAudioPlayer.swift; sourceTree = "<group>"; };
+		6C0301E0204D56F40077321D /* Ext+TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+TimeInterval.swift"; sourceTree = "<group>"; };
+		6C0301E4204EA8900077321D /* LyricTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricTableViewCellModel.swift; sourceTree = "<group>"; };
+		6C192C76204FB9990041AEF6 /* Paragraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paragraph.swift; sourceTree = "<group>"; };
 		6C22D9F7204707700081FBE4 /* Persistent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistent.swift; sourceTree = "<group>"; };
 		6C22D9F920470E570081FBE4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6C22D9FE204714090081FBE4 /* Listening.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Listening.xcdatamodel; sourceTree = "<group>"; };
@@ -41,6 +98,12 @@
 		6C22DA15204718510081FBE4 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6C22DA18204719190081FBE4 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		6C22DA1B20471A0F0081FBE4 /* Ext+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIView.swift"; sourceTree = "<group>"; };
+		6C22DA1D2047A8480081FBE4 /* ListFolderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFolderTableViewCell.swift; sourceTree = "<group>"; };
+		6C22DA1F2047A8D70081FBE4 /* SelectFolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFolderViewController.swift; sourceTree = "<group>"; };
+		6C22DA212047AA0A0081FBE4 /* SelectFolderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFolderViewModel.swift; sourceTree = "<group>"; };
+		6C22DA232047BCE70081FBE4 /* BaseServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServices.swift; sourceTree = "<group>"; };
+		6C22DA282047D7F00081FBE4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6C22DA2A2047EC610081FBE4 /* Enumeration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumeration.swift; sourceTree = "<group>"; };
 		6CCED4772045CCBE00AADFDD /* Listening.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Listening.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCED48F2045CD9B00AADFDD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CCED4942045CD9B00AADFDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +112,33 @@
 		6CCED4A22045D4F700AADFDD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		6CCED4A42045D51400AADFDD /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		6CCED4A72045D91A00AADFDD /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		6CEDC5402053FF1E00D8958A /* LyricSettingFullControlView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LyricSettingFullControlView.xib; sourceTree = "<group>"; };
+		6CEDC54220540B1000D8958A /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		6CEDC54420540BFB00D8958A /* LyricSettingFullControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricSettingFullControlView.swift; sourceTree = "<group>"; };
+		6CEDC54620540C8B00D8958A /* PlayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewModel.swift; sourceTree = "<group>"; };
+		6CEDC5482054291500D8958A /* JsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
+		6CEDC54A2055294000D8958A /* LyricTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricTableViewCell.swift; sourceTree = "<group>"; };
+		6CEDC54B2055294000D8958A /* LyricTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LyricTableViewCell.xib; sourceTree = "<group>"; };
+		6CEDC54E20552F5D00D8958A /* LoopNotifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopNotifyView.swift; sourceTree = "<group>"; };
+		6CEDC55020552F6800D8958A /* LoopNotifyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoopNotifyView.xib; sourceTree = "<group>"; };
+		6CEDC5532055482C00D8958A /* PlayControlInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayControlInterface.swift; sourceTree = "<group>"; };
+		6CEDC5552055485000D8958A /* PlayViewModelInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewModelInterface.swift; sourceTree = "<group>"; };
+		6CEDC5572055489B00D8958A /* SelectFolderViewModelInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFolderViewModelInterface.swift; sourceTree = "<group>"; };
+		6CEDC559205548C000D8958A /* LyricSettingViewModelInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricSettingViewModelInterface.swift; sourceTree = "<group>"; };
+		6CEDC55B2055593500D8958A /* ListFileViewModelInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFileViewModelInterface.swift; sourceTree = "<group>"; };
+		6CFAAF7020482DA400A22A7A /* Ext+NSManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ext+NSManagedObject.swift"; sourceTree = "<group>"; };
+		6CFAAF722048355900A22A7A /* ListItemTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemTableViewCellModel.swift; sourceTree = "<group>"; };
+		6CFAAF74204912BD00A22A7A /* Ext+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Date.swift"; sourceTree = "<group>"; };
+		6CFAAF76204956F400A22A7A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		6CFAAF7820495D3D00A22A7A /* ListFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFileViewController.swift; sourceTree = "<group>"; };
+		6CFAAF7A20495E9E00A22A7A /* ListFileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFileViewModel.swift; sourceTree = "<group>"; };
+		6CFAAF7C20498A1E00A22A7A /* ListFileCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFileCellModel.swift; sourceTree = "<group>"; };
+		6CFAAF7E2049C98400A22A7A /* ListItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemTableViewCell.swift; sourceTree = "<group>"; };
+		6CFAAF80204A53E100A22A7A /* LoadingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingFooterView.swift; sourceTree = "<group>"; };
+		6CFAAF82204A546300A22A7A /* LoadingFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingFooterView.xib; sourceTree = "<group>"; };
+		6CFAAF84204A681600A22A7A /* LoadingFooterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingFooterViewModel.swift; sourceTree = "<group>"; };
+		6CFAAF88204ABFDC00A22A7A /* CustomFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFileManager.swift; sourceTree = "<group>"; };
+		6CFAAF8A204B003600A22A7A /* Ext+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+String.swift"; sourceTree = "<group>"; };
 		7DD360DCA173846EF00A3771 /* Pods-Listening.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Listening.release.xcconfig"; path = "Pods/Target Support Files/Pods-Listening/Pods-Listening.release.xcconfig"; sourceTree = "<group>"; };
 		ACF31041C1B36844AB4EC6FC /* Pods_Listening.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Listening.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,6 +167,12 @@
 		6C22D9FB204713C60081FBE4 /* Custom Models */ = {
 			isa = PBXGroup;
 			children = (
+				6CFAAF88204ABFDC00A22A7A /* CustomFileManager.swift */,
+				6C0301CC204BEB450077321D /* CustomTicket.swift */,
+				6C0301D6204C43C10077321D /* TextFileParser.swift */,
+				6CEDC5482054291500D8958A /* JsonParser.swift */,
+				6C0301DE204CF3BE0077321D /* CustomAudioPlayer.swift */,
+				6C192C76204FB9990041AEF6 /* Paragraph.swift */,
 			);
 			path = "Custom Models";
 			sourceTree = "<group>";
@@ -100,8 +196,20 @@
 			isa = PBXGroup;
 			children = (
 				6C22DA1B20471A0F0081FBE4 /* Ext+UIView.swift */,
+				6CFAAF7020482DA400A22A7A /* Ext+NSManagedObject.swift */,
+				6CFAAF74204912BD00A22A7A /* Ext+Date.swift */,
+				6CFAAF8A204B003600A22A7A /* Ext+String.swift */,
+				6C0301E0204D56F40077321D /* Ext+TimeInterval.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		6C22DA252047BCEF0081FBE4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6C22DA232047BCE70081FBE4 /* BaseServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		6CCED46E2045CCBE00AADFDD = {
@@ -127,9 +235,11 @@
 			children = (
 				6CCED48F2045CD9B00AADFDD /* AppDelegate.swift */,
 				6CCED4902045CD9B00AADFDD /* Helper */,
+				6C22DA252047BCEF0081FBE4 /* Services */,
 				6CCED4912045CD9B00AADFDD /* Model */,
 				6CCED4972045CD9B00AADFDD /* View */,
 				6CCED4982045CD9B00AADFDD /* ViewModel */,
+				6CEDC5522055481600D8958A /* ViewModelInterface */,
 				6CCED4922045CD9B00AADFDD /* Resource */,
 			);
 			path = Listening;
@@ -140,6 +250,7 @@
 			children = (
 				6C22D9F7204707700081FBE4 /* Persistent.swift */,
 				6C22D9F920470E570081FBE4 /* Constants.swift */,
+				6C22DA2A2047EC610081FBE4 /* Enumeration.swift */,
 				6C22DA1A204719FC0081FBE4 /* Extension */,
 			);
 			path = Helper;
@@ -175,6 +286,7 @@
 		6CCED4952045CD9B00AADFDD /* Info */ = {
 			isa = PBXGroup;
 			children = (
+				6C22DA282047D7F00081FBE4 /* GoogleService-Info.plist */,
 				6CCED4962045CD9B00AADFDD /* Info.plist */,
 			);
 			path = Info;
@@ -184,9 +296,9 @@
 			isa = PBXGroup;
 			children = (
 				6CCED49F2045CE2B00AADFDD /* TableViewCells */,
+				6CCED49C2045CDFF00AADFDD /* CustomViews */,
 				6CCED49E2045CE1A00AADFDD /* Storyboards */,
 				6CCED49D2045CE0A00AADFDD /* ViewControllers */,
-				6CCED49C2045CDFF00AADFDD /* CustomViews */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,6 +307,15 @@
 			isa = PBXGroup;
 			children = (
 				6CCED4A42045D51400AADFDD /* SignInViewModel.swift */,
+				6C22DA212047AA0A0081FBE4 /* SelectFolderViewModel.swift */,
+				6CFAAF722048355900A22A7A /* ListItemTableViewCellModel.swift */,
+				6CFAAF7A20495E9E00A22A7A /* ListFileViewModel.swift */,
+				6CFAAF7C20498A1E00A22A7A /* ListFileCellModel.swift */,
+				6C0301D0204C02500077321D /* ListItemDownloadedTableViewCellModel.swift */,
+				6CFAAF84204A681600A22A7A /* LoadingFooterViewModel.swift */,
+				6C0301D4204C42B60077321D /* LyricSettingViewModel.swift */,
+				6C0301E4204EA8900077321D /* LyricTableViewCellModel.swift */,
+				6CEDC54620540C8B00D8958A /* PlayViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -202,6 +323,12 @@
 		6CCED49C2045CDFF00AADFDD /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				6C0301D8204CEA3D0077321D /* LyricSettingControlView.xib */,
+				6C0301DC204CEAAF0077321D /* LyricSettingControlView.swift */,
+				6CEDC5402053FF1E00D8958A /* LyricSettingFullControlView.xib */,
+				6CEDC54420540BFB00D8958A /* LyricSettingFullControlView.swift */,
+				6CEDC54E20552F5D00D8958A /* LoopNotifyView.swift */,
+				6CEDC55020552F6800D8958A /* LoopNotifyView.xib */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -209,7 +336,12 @@
 		6CCED49D2045CE0A00AADFDD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6CFAAF76204956F400A22A7A /* BaseViewController.swift */,
 				6CCED4A22045D4F700AADFDD /* SignInViewController.swift */,
+				6C22DA1F2047A8D70081FBE4 /* SelectFolderViewController.swift */,
+				6CFAAF7820495D3D00A22A7A /* ListFileViewController.swift */,
+				6C0301D2204C42A70077321D /* LyricSettingViewController.swift */,
+				6CEDC54220540B1000D8958A /* PlayViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -225,6 +357,13 @@
 		6CCED49F2045CE2B00AADFDD /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				6C22DA1D2047A8480081FBE4 /* ListFolderTableViewCell.swift */,
+				6CFAAF7E2049C98400A22A7A /* ListItemTableViewCell.swift */,
+				6C0301CE204C01C90077321D /* ListItemDownloadedTableViewCell.swift */,
+				6CFAAF80204A53E100A22A7A /* LoadingFooterView.swift */,
+				6CFAAF82204A546300A22A7A /* LoadingFooterView.xib */,
+				6CEDC54A2055294000D8958A /* LyricTableViewCell.swift */,
+				6CEDC54B2055294000D8958A /* LyricTableViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -235,6 +374,18 @@
 				6CCED4A72045D91A00AADFDD /* Dynamic.swift */,
 			);
 			path = Dynamic;
+			sourceTree = "<group>";
+		};
+		6CEDC5522055481600D8958A /* ViewModelInterface */ = {
+			isa = PBXGroup;
+			children = (
+				6CEDC5532055482C00D8958A /* PlayControlInterface.swift */,
+				6CEDC5552055485000D8958A /* PlayViewModelInterface.swift */,
+				6CEDC559205548C000D8958A /* LyricSettingViewModelInterface.swift */,
+				6CEDC5572055489B00D8958A /* SelectFolderViewModelInterface.swift */,
+				6CEDC55B2055593500D8958A /* ListFileViewModelInterface.swift */,
+			);
+			path = ViewModelInterface;
 			sourceTree = "<group>";
 		};
 		A2CFF8396243238FEDAC4842 /* Frameworks */ = {
@@ -308,6 +459,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CCED4A12045D4D600AADFDD /* Main.storyboard in Resources */,
+				6CFAAF83204A546300A22A7A /* LoadingFooterView.xib in Resources */,
+				6CEDC55120552F6800D8958A /* LoopNotifyView.xib in Resources */,
+				6C22DA292047D7F00081FBE4 /* GoogleService-Info.plist in Resources */,
+				6C0301D9204CEA3D0077321D /* LyricSettingControlView.xib in Resources */,
+				6CEDC5412053FF1E00D8958A /* LyricSettingFullControlView.xib in Resources */,
+				6CEDC54D2055294000D8958A /* LyricTableViewCell.xib in Resources */,
 				6CCED49B2045CD9B00AADFDD /* Info.plist in Resources */,
 				6CCED49A2045CD9B00AADFDD /* Assets.xcassets in Resources */,
 			);
@@ -368,20 +525,59 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CFAAF7120482DA400A22A7A /* Ext+NSManagedObject.swift in Sources */,
+				6CEDC54320540B1000D8958A /* PlayViewController.swift in Sources */,
+				6CEDC5492054291500D8958A /* JsonParser.swift in Sources */,
 				6C22DA1C20471A0F0081FBE4 /* Ext+UIView.swift in Sources */,
+				6C0301D1204C02500077321D /* ListItemDownloadedTableViewCellModel.swift in Sources */,
 				6C22DA19204719190081FBE4 /* CoreDataStack.swift in Sources */,
 				6C22DA17204718510081FBE4 /* Item+CoreDataProperties.swift in Sources */,
+				6C0301CD204BEB450077321D /* CustomTicket.swift in Sources */,
 				6C22D9F8204707700081FBE4 /* Persistent.swift in Sources */,
+				6CEDC54C2055294000D8958A /* LyricTableViewCell.swift in Sources */,
+				6CFAAF77204956F400A22A7A /* BaseViewController.swift in Sources */,
+				6C22DA1E2047A8480081FBE4 /* ListFolderTableViewCell.swift in Sources */,
 				6C22DA13204718370081FBE4 /* Folder+CoreDataProperties.swift in Sources */,
 				6CCED4A32045D4F800AADFDD /* SignInViewController.swift in Sources */,
+				6CEDC55A205548C000D8958A /* LyricSettingViewModelInterface.swift in Sources */,
 				6CCED4A82045D91A00AADFDD /* Dynamic.swift in Sources */,
+				6CFAAF85204A681600A22A7A /* LoadingFooterViewModel.swift in Sources */,
+				6C0301DD204CEAAF0077321D /* LyricSettingControlView.swift in Sources */,
 				6C22DA16204718510081FBE4 /* Item+CoreDataClass.swift in Sources */,
+				6CFAAF75204912BD00A22A7A /* Ext+Date.swift in Sources */,
 				6C22D9FF204714090081FBE4 /* Listening.xcdatamodeld in Sources */,
+				6C192C77204FB9990041AEF6 /* Paragraph.swift in Sources */,
 				6CCED4992045CD9B00AADFDD /* AppDelegate.swift in Sources */,
+				6C0301E5204EA8900077321D /* LyricTableViewCellModel.swift in Sources */,
+				6C22DA2B2047EC610081FBE4 /* Enumeration.swift in Sources */,
+				6C0301D3204C42A70077321D /* LyricSettingViewController.swift in Sources */,
+				6C0301DF204CF3BE0077321D /* CustomAudioPlayer.swift in Sources */,
+				6CFAAF7F2049C98400A22A7A /* ListItemTableViewCell.swift in Sources */,
+				6CFAAF732048355900A22A7A /* ListItemTableViewCellModel.swift in Sources */,
+				6C0301E1204D56F40077321D /* Ext+TimeInterval.swift in Sources */,
+				6CFAAF7920495D3D00A22A7A /* ListFileViewController.swift in Sources */,
 				6C22DA0E2047181D0081FBE4 /* User+CoreDataClass.swift in Sources */,
+				6C0301D7204C43C10077321D /* TextFileParser.swift in Sources */,
+				6C0301D5204C42B60077321D /* LyricSettingViewModel.swift in Sources */,
+				6C0301CF204C01C90077321D /* ListItemDownloadedTableViewCell.swift in Sources */,
+				6CEDC54F20552F5D00D8958A /* LoopNotifyView.swift in Sources */,
 				6C22D9FA20470E570081FBE4 /* Constants.swift in Sources */,
+				6CEDC54520540BFB00D8958A /* LyricSettingFullControlView.swift in Sources */,
+				6CFAAF81204A53E100A22A7A /* LoadingFooterView.swift in Sources */,
+				6C22DA242047BCE70081FBE4 /* BaseServices.swift in Sources */,
+				6CFAAF7B20495E9E00A22A7A /* ListFileViewModel.swift in Sources */,
+				6CFAAF89204ABFDC00A22A7A /* CustomFileManager.swift in Sources */,
+				6CEDC54720540C8B00D8958A /* PlayViewModel.swift in Sources */,
+				6C22DA222047AA0A0081FBE4 /* SelectFolderViewModel.swift in Sources */,
+				6C22DA202047A8D70081FBE4 /* SelectFolderViewController.swift in Sources */,
+				6CEDC5582055489B00D8958A /* SelectFolderViewModelInterface.swift in Sources */,
+				6CEDC5562055485000D8958A /* PlayViewModelInterface.swift in Sources */,
 				6C22DA12204718370081FBE4 /* Folder+CoreDataClass.swift in Sources */,
 				6C22DA0F2047181D0081FBE4 /* User+CoreDataProperties.swift in Sources */,
+				6CFAAF7D20498A1E00A22A7A /* ListFileCellModel.swift in Sources */,
+				6CEDC5542055482C00D8958A /* PlayControlInterface.swift in Sources */,
+				6CFAAF8B204B003600A22A7A /* Ext+String.swift in Sources */,
+				6CEDC55C2055593500D8958A /* ListFileViewModelInterface.swift in Sources */,
 				6CCED4A52045D51400AADFDD /* SignInViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
